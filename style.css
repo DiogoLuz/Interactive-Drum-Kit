@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+.btn {
+  font-size: 75%;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+  grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+  width: 100vw;
+  height: 81vw;
+  background-image: url("static/drums.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#crash {
+  grid-column: 3/5;
+}
+
+#high-tom {
+  grid-row: 3/4;
+  grid-column: 4/6;
+  width: 85%;
+}
+
+#medium-tom {
+  grid-row: 3/4;
+  grid-column: 6/8;
+
+  margin-left: 20%;
+}
+
+#ride {
+  grid-column: 8/10;
+}
+
+#bass-drum {
+  grid-row: 5/8;
+  grid-column: 5/8;
+  margin-top: 15%;
+  margin-right: 10%;
+  border-radius: 50%;
+  width: 13vw;
+}
+
+#snare {
+  grid-row: 4/5;
+  grid-column: 7/9;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+#hi-hat {
+  grid-row: 2/3;
+  grid-column: 8/11;
+  margin-top: 10%;
+}
+
+#floor-tom {
+  grid-row: 4/5;
+  grid-column: 3/5;
+  margin-top: 10%;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    width: 50vw;
+
+    height: 50vw;
+  }
+}
